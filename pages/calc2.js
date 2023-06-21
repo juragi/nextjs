@@ -30,7 +30,9 @@ export default function Calc2() {
 
     const getOffsetUsd = (usdkrw) => {
         let offsetUsd = 0;
-        if(usdkrw > 1255) offsetUsd = 2.48;
+        if(usdkrw > 1285) offsetUsd = 2.52;
+        else if(usdkrw > 1275) offsetUsd = 2.5;
+        else if(usdkrw > 1255) offsetUsd = 2.48;
         else offsetUsd = 2.4;
         return offsetUsd;
     }
